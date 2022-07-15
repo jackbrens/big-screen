@@ -1,8 +1,8 @@
 <template>
   <div ref="appRef" class="home">
-    <div class="header">实时数据监控平台</div>
+    <div class="header">大数据实时数据监控平台</div>
     <div class="container">
-      <content-left class="left" />
+      <content-left class="left borderOne" />
       <content-center class="center" />
       <content-right class="right" />
     </div>
@@ -19,6 +19,7 @@ import ContentRight from '@/components/layouts/contentRight/contentRight'
 import ContentBottom from '@/components/layouts/contentBottom/contentBottom'
 import responsive from '@/utils/responsive'
 import { onMounted, ref } from 'vue'
+import '@/assets/style/common.scss'
 
 const { appRef, calcRate, windowDraw } = responsive()
 onMounted(() => {
@@ -30,6 +31,8 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .home {
+  background: url('@/assets/images/bg.png') no-repeat;
+  background-size: 100% 100%;
   width: 1920px;
   height: 1080px;
   position: absolute;
@@ -55,14 +58,6 @@ onMounted(() => {
     .right {
       flex: 1;
     }
-    .left {
-      background: url('@/assets/images/real-time.png') no-repeat;
-      background-size: 100% 100%;
-    }
-    .right {
-      //background: url('@/assets/images/real-time.png') no-repeat;
-      //background-size: 100% 100%;
-    }
     .center {
       flex: 3;
       margin: 0 20px;
@@ -74,7 +69,7 @@ onMounted(() => {
     margin-top: 1%;
     .bottom {
       height: 100%;
-      background: url('@/assets/images/bg-footer.png') no-repeat;
+      background: url('@/assets/images/border.png') no-repeat;
       background-size: 100% 100%;
     }
   }

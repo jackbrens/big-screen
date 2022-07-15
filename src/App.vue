@@ -15,7 +15,7 @@ body {
 #app {
   width: 100vw;
   height: 100vh;
-  background-color: #000a3b;
+  background-color: #12171d;
   overflow: hidden;
 }
 </style>
