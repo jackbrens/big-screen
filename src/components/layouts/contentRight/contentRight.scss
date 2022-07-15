@@ -1,0 +1,64 @@
+.contentRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  .real-name {
+    width: 175px;
+    height: 34px;
+    background: url('@/assets/images/box-name.png') no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 34px;
+    font-size: 20px;
+    color: #3cc4ef;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .right-up {
+    flex: 1;
+    background: url('@/assets/images/real-time.png') no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 30px;
+    .ball {
+      height: 70%;
+      display: flex;
+      .ball-item {
+        position: relative;
+        flex: 1;
+        p {
+          width: 100%;
+          color: #FFFFFF;
+          position: absolute;
+          bottom: 10px;
+          text-align: center;
+        }
+      }
+    }
+    .pei {
+      height: 30%;
+      display: flex;
+      .pei-item {
+        flex: 1;
+      }
+    }
+  }
+  .right-down {
+    flex: 1;
+    background: url('@/assets/images/real-time.png') no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    .bg {
+      z-index: -1;
+      position: absolute;
+      bottom: 75px;
+      left: 50%;
+      width: 180px;
+      height: 75px;
+      background-image: url('@/assets/images/chart_opacity_bg.png');
+      background-size: 100% 100%;
+      transform: translateX(-50%);
+    }
+  }
+}
