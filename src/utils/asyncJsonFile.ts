@@ -22,6 +22,6 @@ export async function getMapByName(name: string) {
   return await getAssetsFile(name)
 }
 
-export function getImgUrl(name: number) {
+export function getImgUrl(name: number | string) {
   return new URL(`../assets/images/${name}.png`, import.meta.url).href
 }
